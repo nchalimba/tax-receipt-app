@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.cake.easy_taxfox">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+
+        <activity android:name="com.scanlibrary.ScanActivity"/>
+
+
+        <activity android:name=".Activities.OverviewActivity"
+            android:theme="@style/AppTheme"/>
+      
+        <activity android:name=".Activities.ExportActivity"
+            android:theme="@style/AppTheme"/>
+      
+        <activity android:name=".Activities.ProfileActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".Activities.SettingsActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".Activities.DashboardActivity"
+            android:theme="@style/AppTheme">
+          <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+              <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter>
+        </activity>
+
+        <activity android:name=".Activities.ReceiptDataActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Activities.NavigationActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <provider
+            android:name=".Others.MyFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource"/>
+        </provider>
+
+
+    </application>
+
+</manifest>

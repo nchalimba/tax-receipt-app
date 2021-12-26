@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="orange" tools:ignore="MissingDefaultResource">#FF8200</color>
+    <color name="orangeDark" tools:ignore="MissingDefaultResource">#F77000</color>
+    <color name="switchColor">#F77000</color>
+
+    <color name="orange_toolbar">#FF5722</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

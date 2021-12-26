@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="600dp"
+    tools:context=".Activities.OverviewActivity">
+
+        <ListView
+            android:id="@+id/overviewListViewReceipts"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/overviewBtnTakePicture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/overviewSpinnerMonth" />
+
+        <ImageButton
+            android:id="@+id/overviewBtnTakePicture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_camera"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toBottomOf="@id/overviewBtnShowGallery"
+            app:layout_constraintEnd_toStartOf="@id/overviewBtnShowGallery"/>
+
+        <ImageButton
+            android:id="@+id/overviewBtnShowGallery"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/ic_image_search"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/overviewProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/overviewBtnTakePicture"
+        app:layout_constraintEnd_toStartOf="@id/overviewBtnTakePicture" />
+
+        <Spinner
+            android:id="@+id/overviewSpinnerMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:entries="@array/months"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toStartOf="@+id/overviewTextYear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/overviewTextYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/overviewYear"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/overviewSpinnerMonth"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+<resources>
+    <!--GENERAL -->
+    <string name="app_name">EASY TAXFOX</string>
+    <string-array name="months">
+        <item>Gesamt</item>
+        <item>Januar</item>
+        <item>Februar</item>
+        <item>März</item>
+        <item>April</item>
+        <item>Mai</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Dezember</item>
+    </string-array>
+
+
+    <string name="cancel">Abbrechen</string>
+    <string name="exit">Verlassen</string>
+    <string name="delete">Löschen</string>
+    <string name="aborted">Abgebrochen</string>
+    <string name="yes">Ja</string>
+    <string name="ok">OK</string>
+
+
+    <!-- PERMISSIONS -->
+    <string name="permissionDenied">Berechtigung abgelehnt!</string>
+    <string name="permissionNeeded">Berechtigung benötigt</string>
+    <string name="permissionScannerReason">Bilder und Videos müssen aufgenommen werden, um erfolgreich Belege zu scannen</string>
+    <string name="permissionExportReason">Zugriff auf Dateien wird benötigt, um PDF-Exporte auszuführen</string>
+    <string name="permissionOk">Ok</string>
+    <string name="permissionCancel">Abbrechen</string>
+
+    <!-- VISION API -->
+    <string name="visionNoAccount">Kein Account ausgewählt</string>
+    <string name="visionAuthFailed">Authorisierung fehlgeschlagen!</string>
+
+    <!-- SCANNER -->
+    <string name="scanNoMethodSelected">Keine Scan Methode ausgefählt</string>
+    <string name="scanCameraInactive">Das Kamera-Feature ist zurzeit nicht verfügbar</string>
+    <string name="scanNoDirectoryCreated">Ordner konnte nicht angelegt werden. Bitte lege manuell einen Ordner namens "EasyTaxFox" unter Interner Speicher/Documents an.</string>
+
+
+    <!-- PDF -->
+
+    <!-- NAVIGATION -->
+    <string name="navigation_drawer_open">Navigation öffnen</string>
+    <string name="navigation_drawer_close">Navigation schließen</string>
+
+    <!-- DASHBOARD -->
+    <string name="dashboardScansText">Scans</string>
+    <string name="dashboardSumAndAmountOfCategoryText">Gesamtbetrag pro Anlage:</string>
+    <string name="dashboardAmountScansHint">100</string>
+    <string name="dashboardYearHint">2021</string>
+    <string name="dashboardTitle">Dashboard</string>
+    <string name="dashboardPieChartHeading">Deine Ausgaben</string>
+    <string name="dashboardPieChartDataLabel">Expense Category</string>
+
+    <!-- OVERVIEW -->
+    <string name="textScanHint">Titel</string>
+    <string name="textOverviewDateHint">01.01.2020</string>
+    <string name="textOverviewAmountHint">9999,99 €</string>
+    <string name="overviewYear">2021</string>
+    <string name="overviewTitle">Übersicht</string>
+    <string name="overviewEmptyReceiptTitle">- kein Titel angegeben -</string>
+    <string name="overviewEmptyReceiptDate">-</string>
+    <string name="overviewEmptyReceiptAmount">- €</string>
+
+    <!-- SETTINGS -->
+    <string name="textSettingsYear">Geschäftsjahr</string>
+    <string name="textSettingsAppDesign">Darkmode</string>
+    <string name="textSettingsTextrecognition">Texterkennung</string>
+    <string-array name="settingsChooseBusinessYear">
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+    <string name="settingsSwitchTextrecognition">Aus / Ein</string>
+    <string name="settingsSwitchDarkmode">Aus / Ein</string>
+    <string name="settingsTitle">Einstellungen</string>
+    <string name="settingsSaved">Änderungen gespeichert</string>
+
+
+    <!-- PROFILE -->
+    <string name="profileUserNameHint">Benutzer</string>
+    <string name="profileUserFirstNameText">Vorname</string>
+    <string name="profileUserLastNameText">Nachname</string>
+    <string name="profileTitle">Mein Profil</string>
+    <string name="profileSaved">Das Profil wurde erfolgreich aktualisiert</string>
+    <string name="profileInvalid">Bitte Vor- und Nachnamen angeben</string>
+
+
+    <!-- RECEIPT DATA -->
+    <string name="receiptDescription">Bezeichnung</string>
+    <string name="receiptSum">Endsumme</string>
+    <string name="receiptDate">Belegdatum</string>
+    <string name="receiptCurrencyEUR">EUR</string>
+    <string name="textAnnexe">Anlage</string>
+    <string name="textSegment">Abschnitt</string>
+    <string name="receiptDeleteDialogTitle">Beleg löschen?</string>
+    <string name="receiptDeleteDialogMessage">Möchtest du den Beleg wirklich löschen?</string>
+    <string name="receiptExitDialogMessage">Dein Beleg ist unvollständig und wird verworfen!</string>
+    <string name="receiptExitDialogTitle">Wirklich verlassen?</string>
+    <string name="receiptWrongDateFormat">Falsches Datumsformat</string>
+    <string name="receiptYearDialogTitle">Falsches Jahr</string>
+    <string name="receiptYearDialogMessage">Falsches Geschäftsjahr angegeben. Trotzdem speichern?</string>
+    <string name="receiptDeleteSuccess">Beleg wurde erfolgreich gelöscht</string>
+    <string name="receiptPreviewError">PDF Vorschau konnte nicht geladen werden</string>
+    <string name="receiptTitle">Belegdaten</string>
+    <string name="receiptInfoDialogTitle">Bedeutung der Kürzel</string>
+
+    <!-- EXPORT -->
+    <string name="yearExportSettingsBusinessYearHint">2019</string>
+    <string name="exportSettingsRadioButtonOne">Eine PDF-Datei</string>
+    <string name="exportSettingsRadioButtonTwo">Einzelne PDF-Dateien</string>
+    <string name="exportSettingsFrom">Von:</string>
+    <string name="exportSettingsUntil">Bis:</string>
+    <string name="exportSettingsFromHint"></string>
+    <string name="exportSettingsUntilHint"></string>
+    <string name="checkBoxWholeBusinessYear">Ganzes Geschäftsjahr</string>
+    <string name="exportTitle">Export</string>
+    <string name="exportInvalidInput">Falsche Eingaben oder keine Belege ausgewählt</string>
+    <string name="exportFailed">Export fehlgeschlagen</string>
+    <string name="exportReceiptsChosen"> Belege ausgewählt</string>
+    <string name="exportParsingError">Eingegebenes Datum hat das falsche Format</string>
+    <string name="exportProvideDate">Bitte gib ein Datum ein</string>
+    <string name="exportNoFiles">Keine Dateien zum Export verfügbar</string>
+    <string name="exportIntentTitle">Teile deine Exporte</string>
+</resources>

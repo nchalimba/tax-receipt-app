@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Index of each activity in the burger menu -->
+    <integer name="dashboardNavigationIndex">0</integer>
+    <integer name="overviewNavigationIndex">1</integer>
+    <integer name="profileNavigationIndex">2</integer>
+    <integer name="settingsNavigationIndex">3</integer>
+    <integer name="exportNavigationIndex">4</integer>
+</resources>

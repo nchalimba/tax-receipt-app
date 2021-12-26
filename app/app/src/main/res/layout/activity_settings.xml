@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="600dp"
+    tools:context=".Activities.SettingsActivity">
+
+    <TextView
+        android:id="@+id/settingsBusinessYear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="200dp"
+        android:text="@string/textSettingsYear"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settingsAppDesign"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/textSettingsAppDesign"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/settingsBusinessYear"
+        app:layout_constraintStart_toStartOf="@id/settingsBusinessYear" />
+
+    <TextView
+        android:id="@+id/settingsTextrecognition"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/textSettingsTextrecognition"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/settingsAppDesign"
+        app:layout_constraintStart_toStartOf="@id/settingsAppDesign" />
+
+    <Spinner
+        android:id="@+id/spinnerChooseBusinessYear"
+        android:layout_width="175dp"
+        android:layout_height="0dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintTop_toTopOf="@id/settingsBusinessYear"
+        app:layout_constraintBottom_toBottomOf="@id/settingsBusinessYear"
+        app:layout_constraintStart_toEndOf="@id/settingsBusinessYear"/>
+
+
+    <Switch
+        android:id="@+id/settingsSwitchEnableDarkmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settingsSwitchDarkmode"
+        app:layout_constraintBottom_toBottomOf="@id/settingsAppDesign"
+        app:layout_constraintStart_toStartOf="@id/spinnerChooseBusinessYear"
+        app:layout_constraintEnd_toEndOf="@id/spinnerChooseBusinessYear"/>
+
+    <Switch
+        android:id="@+id/settingsSwitchEnableTextrecognition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settingsSwitchTextrecognition"
+        app:layout_constraintTop_toTopOf="@id/settingsTextrecognition"
+        app:layout_constraintBottom_toBottomOf="@id/settingsTextrecognition"
+        app:layout_constraintStart_toStartOf="@id/settingsSwitchEnableDarkmode"
+        app:layout_constraintEnd_toEndOf="@id/settingsSwitchEnableDarkmode"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

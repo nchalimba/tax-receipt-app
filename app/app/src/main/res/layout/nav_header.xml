@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:padding="16dp"
+    android:background="@color/orange_toolbar"
+    android:theme="@style/Theme.Design"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/navHeaderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:text="@string/app_name"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+</LinearLayout>

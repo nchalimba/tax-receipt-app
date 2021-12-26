@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.ProfileActivity">
+
+        <ImageView
+            android:id="@+id/profileImgProfileIcon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/profileUserNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/profileUserNameHint"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileImgProfileIcon"
+            />
+
+
+        <TextView
+            android:id="@+id/profileUserFirstNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/profileUserFirstNameText"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileUserNameText"
+            />
+
+        <EditText
+            android:id="@+id/profileFirstNameET"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="textCapSentences"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/profileUserFirstNameText"
+            app:layout_constraintStart_toStartOf="@id/profileUserFirstNameText"
+            />
+
+        <TextView
+            android:id="@+id/profileUserLastNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="80dp"
+            android:text="@string/profileUserLastNameText"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/profileFirstNameET"
+            app:layout_constraintTop_toBottomOf="@id/profileFirstNameET"
+            />
+
+        <EditText
+            android:id="@+id/profileLastNameET"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="textCapSentences"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/profileUserLastNameText"
+            app:layout_constraintStart_toStartOf="@id/profileFirstNameET"
+            app:layout_constraintEnd_toEndOf="@id/profileFirstNameET"
+            />
+
+        <ImageButton
+            android:id="@+id/profileImgSaveProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/ic_save"
+            android:contentDescription="SaveProfile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

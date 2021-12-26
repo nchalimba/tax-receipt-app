@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Resource file for the annexes and sections -->
+
+    <!--Array of the annex options (short) -->
+    <string-array name="annexes_short">
+        <item>ESt 1 A</item>
+        <item>ESt 1 C</item>
+        <item>Außergew.Belastungen</item>
+        <item>Sonderausgaben</item>
+        <item>Haushaltsnahe Aufw.</item>
+        <item>AV</item>
+        <item>Kap</item>
+        <item>N</item>
+        <item>R</item>
+        <item>R-AUS</item>
+        <item>R-AV / bAV</item>
+        <item>SO</item>
+        <item>U</item>
+        <item>Unterhalt</item>
+        <item>V</item>
+        <item>Vorsorgeaufwand</item>
+        <item>N-Gre</item>
+    </string-array>
+    <!--Array of the annex options (long) -->
+    <string-array name="annexes_long">
+        <item>ESt 1 A - Einkommensteuererklärung (Hauptvordruck ESt 1 A) für unbeschränkt steuerpflichtige Personen</item>
+        <item>ESt 1 C - Einkommensteuererklärung (Hauptvordruck ESt 1 C) für beschränkt steuerpflichtige Personen</item>
+        <item>Außergew.Belastungen - Anlage Außergewöhnliche Belastungen - Außergewöhnliche Belastungen, Behinderten-Pauschbetrag, Hinterbliebenen-Pauschbetrag, Pflege-Pauschbetrag</item>
+        <item>Sonderausgaben - Angaben zu Sonderausgaben wie Kirchensteuer, Zuwendungen (Spenden und Mitgliedsbeiträge), Berufsausbildungskosten und weitere Aufwendungen</item>
+        <item>Haushaltsnahe Aufw. - Haushaltsnahe Beschäftigungsverhältnisse, Dienstleistungen und Handwerkerleistungen</item>
+        <item>AV - Angaben zur steuerlichen Förderung von Altersvorsorgebeiträgen (sog. Riester-Verträge)</item>
+        <item>Kap - für Einkünfte aus Kapitalvermögen / Anrechnung von Steuern</item>
+        <item>N - für Einkünfte aus nichtselbständiger Arbeit</item>
+        <item>R - Renten und andere Leistungen aus dem Inland (ohne Leistungen aus Altersvor-sorgeverträgen und aus der betrieblichen Altersversorgung)</item>
+        <item>R-AUS - Renten und andere Leistungen aus ausländischen Versicherungen, auslän-dischen Rentenverträgen und ausländischen betrieblichen Versorgungseinrichtungen</item>
+        <item>R-AV / bAV - Leistungen aus inländischen Altersvorsorgeverträgen und aus der inländischen betrieblichen Altersversorgung</item>
+        <item>SO - für sonstige Einkünfte</item>
+        <item>U - für Unterhaltsleistungen an den geschiedenen oder dauernd getrennt lebenden Ehegatten / Lebenspartner</item>
+        <item>Unterhalt - für Unterhaltsleistungen an bedürftige Personen</item>
+        <item>V - für Einkünfte aus Vermietung und Verpachtung</item>
+        <item>Vorsorgeaufwand - Angaben zu Vorsorgeaufwendungen</item>
+        <item>N-Gre - Grenzgänger</item>
+    </string-array>
+
+    <!-- One array of sections for each annex option -->
+    <string-array name="sections_0">
+        <item>Einkommensersatzleistungen</item>
+    </string-array>
+    <string-array name="sections_1">
+        <item>Einkünfte aus nichtselbstständiger Arbeit und Werbungskosten</item>
+        <item>Erträge aus Kapitalvermögen</item>
+        <item>Anzurechnende Steuer</item>
+        <item>Angaben zum Progressionsvorbehalt</item>
+        <item>Gezahlte Vorsorgungsleistungen</item>
+        <item>Spenden und Mitgliedsbeiträge</item>
+        <item>Spenden in das zu erhaltende Vermögen einer Stiftung</item>
+        <item>Steuerbegünstigung für schutzwürdige Kulturgüter</item>
+        <item>Verlustabzug</item>
+    </string-array>
+
+    <string-array name="sections_2">
+        <item>Andere Aufwendungen</item>
+    </string-array>
+
+    <string-array name="sections_3">
+        <item>Kirchensteuer</item>
+        <item>Spenden und Mitgliedsbeiträge</item>
+        <item>Spenden in das zu erhaltende Vermögen einer Stiftung</item>
+        <item>Berufsausbildungskosten</item>
+        <item>Gezahlte Vorsorgeleistungen</item>
+        <item>Unterhaltsleistungen</item>
+        <item>Ausgleichszahlungen</item>
+    </string-array>
+
+    <string-array name="sections_4">
+        <item>Geringfügige Beschäftigungen im Privathaushalt</item>
+        <item>Haushaltsnahe Beschäftigungsverhältnisse/Dienstleistungen</item>
+        <item>Handwerkerleistungen</item>
+
+    </string-array>
+
+    <string-array name="sections_5">
+        <item>Berechnungsgrundlage zur steuerlichen Förderung von Altersvorsorgebeiträgen</item>
+        <item>Angaben zu Kindern, für die ein Anspruch auf Kinderzulage besteht</item>
+
+    </string-array>
+
+    <string-array name="sections_6">
+        <item>Kapitalerträge, die dem inländischen Steuerabzug unterlegen haben</item>
+        <item>Sparer-Pauschalbetrag</item>
+        <item>Kapitalerträge, die nicht dem inländischen Steuerabzug unterlegen haben</item>
+        <item>Kapitalerträge, die der tariflichen Einkommensteuer unterliegen</item>
+        <item>Kapitalerträge, für die die ermäßigte Besteuerung anzuwenden ist</item>
+        <item>Steuerabzugsbeträge</item>
+        <item>Anzurechnende Steuer zu Erträgen aus anderen Einkunftsarten</item>
+        <item>Familienstiftungen</item>
+
+    </string-array>
+
+    <string-array name="sections_7">
+        <item>Angaben zum Arbeitslohn</item>
+        <item>Steuerpflichtiger Arbeitslohn, von dem kein Steuerabzug vorgenummen wurde</item>
+        <item>Steuerfreier Arbeitslohn nach Doppelbesteuerungsabkommen</item>
+        <item>Grenzgänger</item>
+        <item>Steuerfrei enthaltene Aufwandsentschädigung</item>
+        <item>Kurzarbeitergeld</item>
+        <item>Werbungskosten</item>
+        <item>Fahrtkosten</item>
+        <item>Kosten der Unterkunft am Ort der ersten Tätigkeitsstätte</item>
+        <item>Pauschbeträge für Mehraufwendungen für Verpflegung</item>
+        <item>Sonstige Aufwendungen</item>
+
+    </string-array>
+
+    <string-array name="sections_8">
+        <item>Leibrente aus gesetzlicher Rentenversicherung</item>
+        <item>Leibrente aus privater Rentenversicherung</item>
+        <item>Leibrente aus sonstigen Verpflichtungsgründen</item>
+        <item>Werbungskosten</item>
+    </string-array>
+
+    <string-array name="sections_9">
+        <item>Steuerstundungsmodelle</item>
+        <item>Ausländische Leibrente aus privater Rentenversicherung</item>
+    </string-array>
+
+    <string-array name="sections_10">
+        <item>Leistungen</item>
+        <item>Werbungskosten</item>
+    </string-array>
+
+    <string-array name="sections_11">
+        <item>Wiederkehrende Bezüge</item>
+        <item>Ausgleichsleistungen zur Vermeidung des Versorgungsausgleichs</item>
+        <item>Unterhaltsleistungen</item>
+        <item>Werbungskosten</item>
+        <item>Andere Wiederkehrende Bezüge</item>
+        <item>Leistungen</item>
+        <item>Abgeordnetenbezüge</item>
+        <item>Steuerstundungsmodelle</item>
+        <item>Private Veräußerungsgeschäfte, Grundstücke und grundstücksgleiche Rechte</item>
+        <item>Private Veräußerungsgeschäfte, andere Wirtschaftsgüter</item>
+        <item>Private Veräußerungsgeschäfte, andere Einkünfte</item>
+    </string-array>
+
+    <string-array name="sections_12">
+        <item>Antrag auf Abzug von Unterhaltsleistungen und Ausgleichsleistungen</item>
+    </string-array>
+
+    <string-array name="sections_13">
+        <item>Beiträge zu Basis-Kranken- und gesetzlicher Pflegeversicherung</item>
+        <item>Unterhaltsleistungen an im Ausland lebende personen</item>
+        <item>Einkünfte und Bezüge der unterstützten Person</item>
+    </string-array>
+
+    <string-array name="sections_14">
+        <item>Einkünfte aus dem bebauten Grundstück</item>
+        <item>Anteile an Einkünften</item>
+        <item>Werbungskosten</item>
+        <item>Zusätzliche Angaben</item>
+    </string-array>
+
+    <string-array name="sections_15">
+        <item>Beiträge zur Altersvorsorge</item>
+        <item>Beiträge zur inländischen gesetzlichen Kranken- und Pflegeversicherung</item>
+        <item>Beiträge zur inländischen privaten Kranken- und Pflegeversicherung </item>
+        <item>Beiträge zur ausländischen gesetzllichen oder privaten Kranken- und Pflegeversicherung </item>
+        <item>Steuerfreie Arbeitgeberzuschüsse</item>
+        <item>Als Versicherungsnehmer für andere Personen übernommene Kranken- und Pflegeversicherungsbeiträge</item>
+        <item>Weitere sonstige Vorsorgeaufwendungen</item>
+    </string-array>
+
+    <string-array name="sections_16">
+        <item>Angaben zum Arbeitslohn</item>
+        <item>Werbungskosten</item>
+        <item>Werbungskosten in Sonderfällen</item>
+        <item>Ausländische Beiträge</item>
+        <item>Angaben zur Firmenwagengestellung</item>
+        <item>Krankentaggeldversicherung</item>
+        <item>Nichtberufsunfallversicherung</item>
+    </string-array>
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ReceiptDataActivity">
+
+    <TextView
+        android:id="@+id/receiptDataDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/receiptDescription"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/receiptDataDescriptionET"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:autofillHints=""
+        android:inputType="textCapSentences"
+        app:layout_constraintBottom_toBottomOf="@id/receiptDataDescriptionText"
+        app:layout_constraintStart_toEndOf="@id/receiptDataDescriptionText"
+        app:layout_constraintTop_toTopOf="@+id/receiptDataDescriptionText" />
+
+    <TextView
+        android:id="@+id/receiptDataSumText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="540dp"
+        android:gravity="left"
+        android:text="@string/receiptSum"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/receiptDataDescriptionText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/receiptDataDescriptionText"
+        app:layout_constraintTop_toBottomOf="@id/receiptDataDescriptionText" />
+
+    <EditText
+        android:id="@+id/receiptDataSumET"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@id/receiptDataSumText"
+        app:layout_constraintStart_toStartOf="@id/receiptDataDescriptionET"
+        app:layout_constraintTop_toTopOf="@id/receiptDataSumText" />
+
+    <TextView
+        android:id="@+id/receiptDataCurrencyText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/receiptCurrencyEUR"
+        app:layout_constraintBottom_toBottomOf="@id/receiptDataSumET"
+        app:layout_constraintEnd_toEndOf="@id/receiptDataDescriptionET"
+        app:layout_constraintStart_toEndOf="@id/receiptDataSumET"
+        app:layout_constraintTop_toTopOf="@id/receiptDataSumET" />
+
+    <TextView
+        android:id="@+id/receiptDataDateText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
+        android:text="@string/receiptDate"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/receiptDataSumText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/receiptDataSumText"
+        app:layout_constraintTop_toBottomOf="@id/receiptDataSumText" />
+
+    <EditText
+        android:id="@+id/receiptDataDateET"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/receiptDataDateText"
+        app:layout_constraintEnd_toEndOf="@id/receiptDataDescriptionET"
+        app:layout_constraintStart_toStartOf="@id/receiptDataDescriptionET"
+        app:layout_constraintTop_toTopOf="@id/receiptDataDateText" />
+
+
+    <TextView
+        android:id="@+id/receiptDataCategoryText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/textAnnexe"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/receiptDataDateText"
+        app:layout_constraintStart_toStartOf="@id/receiptDataDateText"
+        app:layout_constraintTop_toBottomOf="@id/receiptDataDateText" />
+
+    <TextView
+        android:id="@+id/receiptDataSubCategoryText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/textSegment"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/receiptDataCategoryText"
+        app:layout_constraintTop_toBottomOf="@id/receiptDataSpinnerCategory" />
+
+    <Spinner
+        android:id="@+id/receiptDataSpinnerCategory"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/annexes_short"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="@id/receiptDataCategoryText"
+        app:layout_constraintTop_toBottomOf="@id/receiptDataCategoryText" />
+
+    <Spinner
+        android:id="@+id/receiptDataSpinnerSubCategory"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@id/receiptDataSpinnerCategory"
+        app:layout_constraintStart_toStartOf="@id/receiptDataSpinnerCategory"
+        app:layout_constraintTop_toBottomOf="@id/receiptDataSubCategoryText" />
+
+    <ImageView
+        android:id="@+id/receiptDataImgPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="TODO"
+        android:maxWidth="150dp"
+        android:maxHeight="225dp"
+        android:minWidth="150dp"
+        android:minHeight="225dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/receiptDataDescriptionText"
+        app:layout_constraintStart_toStartOf="@id/receiptDataDescriptionText"
+        app:layout_constraintTop_toBottomOf="@id/receiptDataSpinnerSubCategory"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/receiptDataImgDelete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_delete"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="@id/receiptDataImgSave"
+        app:layout_constraintEnd_toStartOf="@id/receiptDataImgSave" />
+
+    <ImageButton
+        android:id="@+id/receiptDataImgSave"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_save"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/receiptDataImgInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/ic_menu_info_details"
+        app:layout_constraintStart_toEndOf="@id/receiptDataSpinnerCategory"
+        app:layout_constraintTop_toTopOf="@id/receiptDataSpinnerCategory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
