@@ -6,7 +6,7 @@ Android SDK, SQLite, Android Room, Runnables, Google Vision API
 
 ## Description
 
-The app makes managing receipts for the tax declaration more accessible. The end user kann manage, and import the relevant receipts, as well as export the metadata and the files in a pdf file. This file contains all receipts in a given time period.
+The app makes managing receipts for the tax declaration more accessible. The end user can manage, and import the relevant receipts, as well as export the metadata and the files in a pdf file. This file contains all receipts in a given time period.
 
 ## Features
 
